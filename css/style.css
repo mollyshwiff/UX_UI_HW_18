@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15;
+    color: rgb(114, 107, 161);
+
+  }
+
+  nav ul {
+    list-style: none;
+    justify-content: flex-end;
+    padding: 10px 10px 10px;
+    margin:20px;
+    padding: 0;
+
+  }
+  
+  nav a {
+    color: rgb(114, 107, 161);
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    justify-content: flex-end;
+  }
+
+h1 {
+  display: flex;
+  color: darkslateblue;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+}
+
+
+header {
+    background-color: rgb(114, 107, 161);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 30px;
+}
+  
+h1 {
+    margin: 10;
+  }
+  
+ .flexContainer {
+    display: flex;
+    grid-area: auto;
+    width: 33% 33% 33%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+h3{
+  display: flex;
+  color: darkslateblue;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+}
+  .p{
+    display: flex;
+    color: darkslateblue;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+  
+}
+
+
+
+  #categoryGrid{
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "My Skills" "My UX Skills";
+  }
+
+.myWork{
+  margin: 50px;
+  width: 100%;
+  height: fit-content;
+}
+ 
+
+  @media only screen and (max-width: 600px) {
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(245, 245, 255);
+    }
+      div.a {
+       width: 100%;
+        border: 1px solid black;
+    }
+    
+     div.b {
+        width: 100%;
+        border: 1px solid black; 
+    } 
+    #categoryGrid{
+      grid-template-rows: 300px 300px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "My Skills" "My UX Skills";
+    }
+
+  }
